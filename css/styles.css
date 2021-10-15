@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*start nav section*/
+.nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+.list{
+    list-style: none;
+    margin: 0;
+}
+.list-item {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+.nav-link {
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+.nav-link:hover{
+    color: rgb(12, 183, 200);
+    cursor: pointer;
+}
+/*end nav section*/
+/*start home section*/
+.home{
+    height: 100vh;
+    background: url(../img/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    position:relative;
+}
+.home .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home .overlay .welcome {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    font-family: sans-serif;
+}
+.home .overlay .welcome h1{
+    text-transform: uppercase;
+}
+.home .overlay .welcome p{
+    font-size: 18px;
+    color: rgb(195, 195, 195);
+}
+.home .overlay .welcome span{
+    color: rgb(12, 183, 200);
+}
+/*end home section*/
+/*start about section*/
+.about {
+    padding: 50px;
+    background-color: rgba(6, 7, 7, 0.11);
+}
+.about h2{
+    color: rgb(12, 183, 200);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.about p{
+    font-size: 18px;
+}
+/*end about section*/
+/*start features section*/
+.features {
+    padding: 50px;
+    background-color: rgb(204, 204, 204);
+}
+.features h2{
+    color: rgb(12, 183, 200);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.features p{
+    font-size: 18px;
+}
+/*end features section*/
+/*start contact section*/
+.contact {
+    padding: 50px;
+    background-color: rgb(228, 228, 228);
+}
+.contact h2{
+    color: rgb(12, 183, 200);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.contact form{
+    max-width: 800px;
+    margin: 0 auto;
+    transition: all 1s ease-in-out;
+}
+input,
+textarea {
+    margin-bottom: 20px;
+    padding: 7px 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(198, 198, 198, 1);
+    transition: all .3s ease-in-out;
+}
+input:focus,
+textarea:focus{
+    outline:none;
+    box-shadow: #0cb7cb 0px 0px 3px 1px;
+}
+input[type='text']{
+    width: 46%;
+    display: inline-block;
+    margin-left: 10px;
+}
+input[type='email'],
+input[type='submit'],
+textarea {
+    width: 100%;
+}
+input[type='submit']{
+    background-color: rgb(12, 183, 200);
+    color: #fff;
+    font-size: 20px;
+}
+/*end contact section*/
+/*start copyright div*/
+.copyright{
+    background-color: #000;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+.copyright span{
+    color: rgb(12, 183, 200);
+}
+/*end copyright div*/
+/*strat scroll-to-top button*/
+.scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(12, 183, 200);
+    outline: none;
+    border: none;
+    font-size: 50px;
+    color: #fff;
+    max-height: 45px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+    display: none;
+}
+.scroll-to-top:hover{
+    cursor: pointer;
+    background-color: rgb(1, 133, 146);
+}
+/*end scroll-to-top button*/
+
+.active {
+    color: rgb(12, 183, 200);
+    transition: all .3s ease-in-out;
+}
+
+/*start media*/
+@media (max-width: 540px) {
+    .welcome {
+        left: 10% !important;
+    }
+}
+@media (min-width: 541px) and (max-width: 767px){
+    .welcome{
+        left: 30% !important;
+    }
+}
+/*end media*/
