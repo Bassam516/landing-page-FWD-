@@ -1,7 +1,7 @@
 # landing-page-FWD-
 first project in Udacity EgyptFWD
 
-##Landing Page Project.
+## Landing Page Project.
 
 This project has four sections, and navbar links, when click into any link will go to his section.
 
